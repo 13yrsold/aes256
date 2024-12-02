@@ -1,0 +1,9 @@
+local pass = 'Irooloes'
+
+local hashPass = syn.crypt.hash(pass: string)
+local b64Encode = syn.crypt.base64.encode(pass: string)
+
+local getPass = syn.crypt.custom.hash('sha256', pass: string)
+print(getPass)
+
+print(syn.crypt.base64.decode(pass))
