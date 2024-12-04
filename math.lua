@@ -21,7 +21,7 @@ end
 
 funcition math.radexpo(a: number, b: number, c: number)
     if type(a) == 'number' or type(b) == 'number' or type(c) == 'number' then
-        return a / b ^ c
+        return a ^ b ^ c
     else
         assert('Radicals must be numbers')
     end
