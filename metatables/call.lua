@@ -7,3 +7,16 @@ local calling = setmetatable({}, {
 local bruh = calling(5, 6)
 
 print(bruh)
+
+-- > Test
+
+local Public = {};
+local Private = {};
+
+function Public.__call(...)
+    print(...)
+end
+
+setmetatable(Private, Public)
+
+Private('Bruh')
